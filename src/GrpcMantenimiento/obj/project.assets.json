@@ -1788,6 +1788,9 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "default"
       }
     },
     "frameworks": {
@@ -1847,13 +1850,13 @@
       "code": "NU1803",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://scpackages.azurewebsites.net/nuget'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+      "message": "Está ejecutando la operación \"restore\" con un origen \"HTTP\", \"http://scpackages.azurewebsites.net/nuget\". El acceso que no sea HTTPS se quitará en una versión futura. Considere la posibilidad de migrar a un origen \"HTTPS\"."
     },
     {
       "code": "NU1803",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://sistecreditopaquetesdesarrollo.azurewebsites.net/nuget'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+      "message": "Está ejecutando la operación \"restore\" con un origen \"HTTP\", \"http://sistecreditopaquetesdesarrollo.azurewebsites.net/nuget\". El acceso que no sea HTTPS se quitará en una versión futura. Considere la posibilidad de migrar a un origen \"HTTPS\"."
     }
   ]
 }

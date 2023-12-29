@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "TGAU3gbiu4lCYNSfmu+71C4d6QkRDTukKLc5pLACgBdRKT+u0O2JKr0rbSM38CwN1mEeioc7+s58sltcOQ/+zA==",
+  "dgSpecHash": "1waSFV+906phHH5V3r87AkU/5Fkhj/iEU0pqtreI//Mb+bRuPihQfTU0GOJ/MGsoUerw6ktv4K+Jr1dYSmudkQ==",
   "success": true,
   "projectFilePath": "C:\\repos\\reposPersonal\\GrpcNet\\GrpcSolution\\src\\GrpcMantenimiento\\GrpcMantenimiento.csproj",
   "expectedPackageFiles": [
@@ -50,13 +50,13 @@
       "code": "NU1803",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://scpackages.azurewebsites.net/nuget'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+      "message": "Está ejecutando la operación \"restore\" con un origen \"HTTP\", \"http://scpackages.azurewebsites.net/nuget\". El acceso que no sea HTTPS se quitará en una versión futura. Considere la posibilidad de migrar a un origen \"HTTPS\"."
     },
     {
       "code": "NU1803",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://sistecreditopaquetesdesarrollo.azurewebsites.net/nuget'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+      "message": "Está ejecutando la operación \"restore\" con un origen \"HTTP\", \"http://sistecreditopaquetesdesarrollo.azurewebsites.net/nuget\". El acceso que no sea HTTPS se quitará en una versión futura. Considere la posibilidad de migrar a un origen \"HTTPS\"."
     }
   ]
 }
