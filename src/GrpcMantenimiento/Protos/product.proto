@@ -1,0 +1,96 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "GrpcMantenimiento";
+
+package productit;
+
+service ProducIT
+{
+	//Create Product
+	rpc CreateProduct(CreateProductRequest) returns (CreateProductResponse){}
+
+	//Read Product
+	rpc ReadProduct(ReadProductRequest) returns (ReadProductResponse){}
+
+	//List Products
+	rpc ListProduct(GetAllRequest) returns (GetAllResponse){}
+
+	//Update Product
+	rpc UpdateProduct(UpdateProductRequest) returns (UpdateProductResponse){}
+
+	//Delete Product
+	rpc DeleteProduct(DeleteProductRequest) returns (DeleteProductResponse){}
+
+
+}
+
+
+// Create Product
+message CreateProductRequest
+{
+	string name = 1;
+	string description = 2;
+	
+}
+
+message CreateProductResponse
+{
+	int32 id = 1;
+}
+
+// Read Product By id
+
+message ReadProductRequest
+{
+	int32 id = 1;
+}
+
+message ReadProductResponse 
+{
+	int32 id = 1;
+	string name = 2;
+	string description = 3;
+	string status = 4;
+}
+
+
+// Get All Products
+
+message GetAllRequest
+{
+
+}
+
+message GetAllResponse
+{
+	repeated ReadProductResponse product = 1;
+}
+
+
+//Update Product
+
+message UpdateProductRequest
+{
+	int32 id = 1;
+	string name = 2;
+	string desccription = 3;
+	string status = 4;
+}
+
+message UpdateProductResponse
+{
+	int32 id = 1;
+}
+
+
+//Delete Product
+
+message DeleteProductRequest
+{
+	int32 id = 1;
+}
+
+message DeleteProductResponse
+{
+	int32 id = 1;
+}
