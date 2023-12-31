@@ -71,6 +71,13 @@ namespace GrpcMantenimiento.Services
         }
 
 
+        public override async Task<GetAllResponse> ListProduct(GetAllRequest getAllRequest, ServerCallContext context)
+        {
+            var response = new GetAllResponse();
+            var products = await _dbContext.Products.To
+        }
+
+
     }
 
     
