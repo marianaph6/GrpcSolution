@@ -120,6 +120,25 @@ namespace GrpcMantenimiento.Services
 
         }
 
+        public override async Task<DeleteProductResponse> DeleteProduct (DeleteProductRequest deleteProductRequest, ServerCallContext context)
+        {
+            if(deleteProductRequest.Id <= 0)
+            {
+                throw new RpcException(new Status(StatusCode.InvalidArgument, "El Id del producto ingresado no es valido"));
+            }
+
+            Product product = await _dbContext.Products.FirstOrDefaultAsync(
+                x => x.Id == deleteProductRequest.Id
+                ) ?? throw new RpcException(new Status(StatusCode.NotFound, $"No se encontró ningun producto que corresponda al Id {deleteProductRequest.Id}"));
+
+            _dbContext.Products.Remove(product);
+            await _dbContext.SaveChangesAsync();
+
+            return await Task.FromResult(new DeleteProductResponse { 
+                Id= product.Id 
+            } );
+        }
+
 
     }
 
