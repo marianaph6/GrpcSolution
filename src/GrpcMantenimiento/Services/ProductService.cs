@@ -91,6 +91,36 @@ namespace GrpcMantenimiento.Services
         }
 
 
+
+        public override async Task<UpdateProductResponse> UpdateProduct(UpdateProductRequest updateProductRequest, ServerCallContext context)
+        {
+            if(
+                updateProductRequest.Id <= 0 
+                ||string.IsNullOrEmpty( updateProductRequest.Name ) 
+                || string.IsNullOrEmpty(updateProductRequest.Description)
+              )
+            {
+                throw new RpcException(new Status(StatusCode.InvalidArgument, "Debe ingresar los datos correctos"));
+            }
+
+            Product product = await _dbContext.Products.FirstOrDefaultAsync(
+                x => x.Id == updateProductRequest.Id
+                ) ?? throw new RpcException(new Status(StatusCode.NotFound, $"El id {updateProductRequest.Id} del producto ingresado no fue encontrado"));
+
+            product.Name = updateProductRequest.Name;
+            product.Description = updateProductRequest.Description;
+            product.Status = updateProductRequest.Status;
+
+            await _dbContext.SaveChangesAsync();
+
+            return await Task.FromResult( new UpdateProductResponse
+            {
+                Id= product.Id,
+            } );
+
+        }
+
+
     }
 
     

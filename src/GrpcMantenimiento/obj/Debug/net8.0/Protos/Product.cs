@@ -31,21 +31,21 @@ namespace GrpcMantenimiento {
             "c3BvbnNlEgoKAmlkGAEgASgFEgwKBG5hbWUYAiABKAkSEwoLZGVzY3JpcHRp",
             "b24YAyABKAkSDgoGc3RhdHVzGAQgASgJIg8KDUdldEFsbFJlcXVlc3QiQQoO",
             "R2V0QWxsUmVzcG9uc2USLwoHcHJvZHVjdBgBIAMoCzIeLnByb2R1Y3RpdC5S",
-            "ZWFkUHJvZHVjdFJlc3BvbnNlIlYKFFVwZGF0ZVByb2R1Y3RSZXF1ZXN0EgoK",
-            "AmlkGAEgASgFEgwKBG5hbWUYAiABKAkSFAoMZGVzY2NyaXB0aW9uGAMgASgJ",
-            "Eg4KBnN0YXR1cxgEIAEoCSIjChVVcGRhdGVQcm9kdWN0UmVzcG9uc2USCgoC",
-            "aWQYASABKAUiIgoURGVsZXRlUHJvZHVjdFJlcXVlc3QSCgoCaWQYASABKAUi",
-            "IwoVRGVsZXRlUHJvZHVjdFJlc3BvbnNlEgoKAmlkGAEgASgFMqIDCghQcm9k",
-            "dWNJVBJUCg1DcmVhdGVQcm9kdWN0Eh8ucHJvZHVjdGl0LkNyZWF0ZVByb2R1",
-            "Y3RSZXF1ZXN0GiAucHJvZHVjdGl0LkNyZWF0ZVByb2R1Y3RSZXNwb25zZSIA",
-            "Ek4KC1JlYWRQcm9kdWN0Eh0ucHJvZHVjdGl0LlJlYWRQcm9kdWN0UmVxdWVz",
-            "dBoeLnByb2R1Y3RpdC5SZWFkUHJvZHVjdFJlc3BvbnNlIgASRAoLTGlzdFBy",
-            "b2R1Y3QSGC5wcm9kdWN0aXQuR2V0QWxsUmVxdWVzdBoZLnByb2R1Y3RpdC5H",
-            "ZXRBbGxSZXNwb25zZSIAElQKDVVwZGF0ZVByb2R1Y3QSHy5wcm9kdWN0aXQu",
-            "VXBkYXRlUHJvZHVjdFJlcXVlc3QaIC5wcm9kdWN0aXQuVXBkYXRlUHJvZHVj",
-            "dFJlc3BvbnNlIgASVAoNRGVsZXRlUHJvZHVjdBIfLnByb2R1Y3RpdC5EZWxl",
-            "dGVQcm9kdWN0UmVxdWVzdBogLnByb2R1Y3RpdC5EZWxldGVQcm9kdWN0UmVz",
-            "cG9uc2UiAEIUqgIRR3JwY01hbnRlbmltaWVudG9iBnByb3RvMw=="));
+            "ZWFkUHJvZHVjdFJlc3BvbnNlIlUKFFVwZGF0ZVByb2R1Y3RSZXF1ZXN0EgoK",
+            "AmlkGAEgASgFEgwKBG5hbWUYAiABKAkSEwoLZGVzY3JpcHRpb24YAyABKAkS",
+            "DgoGc3RhdHVzGAQgASgJIiMKFVVwZGF0ZVByb2R1Y3RSZXNwb25zZRIKCgJp",
+            "ZBgBIAEoBSIiChREZWxldGVQcm9kdWN0UmVxdWVzdBIKCgJpZBgBIAEoBSIj",
+            "ChVEZWxldGVQcm9kdWN0UmVzcG9uc2USCgoCaWQYASABKAUyogMKCFByb2R1",
+            "Y0lUElQKDUNyZWF0ZVByb2R1Y3QSHy5wcm9kdWN0aXQuQ3JlYXRlUHJvZHVj",
+            "dFJlcXVlc3QaIC5wcm9kdWN0aXQuQ3JlYXRlUHJvZHVjdFJlc3BvbnNlIgAS",
+            "TgoLUmVhZFByb2R1Y3QSHS5wcm9kdWN0aXQuUmVhZFByb2R1Y3RSZXF1ZXN0",
+            "Gh4ucHJvZHVjdGl0LlJlYWRQcm9kdWN0UmVzcG9uc2UiABJECgtMaXN0UHJv",
+            "ZHVjdBIYLnByb2R1Y3RpdC5HZXRBbGxSZXF1ZXN0GhkucHJvZHVjdGl0Lkdl",
+            "dEFsbFJlc3BvbnNlIgASVAoNVXBkYXRlUHJvZHVjdBIfLnByb2R1Y3RpdC5V",
+            "cGRhdGVQcm9kdWN0UmVxdWVzdBogLnByb2R1Y3RpdC5VcGRhdGVQcm9kdWN0",
+            "UmVzcG9uc2UiABJUCg1EZWxldGVQcm9kdWN0Eh8ucHJvZHVjdGl0LkRlbGV0",
+            "ZVByb2R1Y3RSZXF1ZXN0GiAucHJvZHVjdGl0LkRlbGV0ZVByb2R1Y3RSZXNw",
+            "b25zZSIAQhSqAhFHcnBjTWFudGVuaW1pZW50b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -55,7 +55,7 @@ namespace GrpcMantenimiento {
             new pbr::GeneratedClrTypeInfo(typeof(global::GrpcMantenimiento.ReadProductResponse), global::GrpcMantenimiento.ReadProductResponse.Parser, new[]{ "Id", "Name", "Description", "Status" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GrpcMantenimiento.GetAllRequest), global::GrpcMantenimiento.GetAllRequest.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GrpcMantenimiento.GetAllResponse), global::GrpcMantenimiento.GetAllResponse.Parser, new[]{ "Product" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GrpcMantenimiento.UpdateProductRequest), global::GrpcMantenimiento.UpdateProductRequest.Parser, new[]{ "Id", "Name", "Desccription", "Status" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GrpcMantenimiento.UpdateProductRequest), global::GrpcMantenimiento.UpdateProductRequest.Parser, new[]{ "Id", "Name", "Description", "Status" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GrpcMantenimiento.UpdateProductResponse), global::GrpcMantenimiento.UpdateProductResponse.Parser, new[]{ "Id" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GrpcMantenimiento.DeleteProductRequest), global::GrpcMantenimiento.DeleteProductRequest.Parser, new[]{ "Id" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GrpcMantenimiento.DeleteProductResponse), global::GrpcMantenimiento.DeleteProductResponse.Parser, new[]{ "Id" }, null, null, null, null)
@@ -1338,7 +1338,7 @@ namespace GrpcMantenimiento {
     public UpdateProductRequest(UpdateProductRequest other) : this() {
       id_ = other.id_;
       name_ = other.name_;
-      desccription_ = other.desccription_;
+      description_ = other.description_;
       status_ = other.status_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -1373,15 +1373,15 @@ namespace GrpcMantenimiento {
       }
     }
 
-    /// <summary>Field number for the "desccription" field.</summary>
-    public const int DesccriptionFieldNumber = 3;
-    private string desccription_ = "";
+    /// <summary>Field number for the "description" field.</summary>
+    public const int DescriptionFieldNumber = 3;
+    private string description_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Desccription {
-      get { return desccription_; }
+    public string Description {
+      get { return description_; }
       set {
-        desccription_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        description_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -1414,7 +1414,7 @@ namespace GrpcMantenimiento {
       }
       if (Id != other.Id) return false;
       if (Name != other.Name) return false;
-      if (Desccription != other.Desccription) return false;
+      if (Description != other.Description) return false;
       if (Status != other.Status) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -1425,7 +1425,7 @@ namespace GrpcMantenimiento {
       int hash = 1;
       if (Id != 0) hash ^= Id.GetHashCode();
       if (Name.Length != 0) hash ^= Name.GetHashCode();
-      if (Desccription.Length != 0) hash ^= Desccription.GetHashCode();
+      if (Description.Length != 0) hash ^= Description.GetHashCode();
       if (Status.Length != 0) hash ^= Status.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -1453,9 +1453,9 @@ namespace GrpcMantenimiento {
         output.WriteRawTag(18);
         output.WriteString(Name);
       }
-      if (Desccription.Length != 0) {
+      if (Description.Length != 0) {
         output.WriteRawTag(26);
-        output.WriteString(Desccription);
+        output.WriteString(Description);
       }
       if (Status.Length != 0) {
         output.WriteRawTag(34);
@@ -1479,9 +1479,9 @@ namespace GrpcMantenimiento {
         output.WriteRawTag(18);
         output.WriteString(Name);
       }
-      if (Desccription.Length != 0) {
+      if (Description.Length != 0) {
         output.WriteRawTag(26);
-        output.WriteString(Desccription);
+        output.WriteString(Description);
       }
       if (Status.Length != 0) {
         output.WriteRawTag(34);
@@ -1503,8 +1503,8 @@ namespace GrpcMantenimiento {
       if (Name.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
       }
-      if (Desccription.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Desccription);
+      if (Description.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Description);
       }
       if (Status.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Status);
@@ -1527,8 +1527,8 @@ namespace GrpcMantenimiento {
       if (other.Name.Length != 0) {
         Name = other.Name;
       }
-      if (other.Desccription.Length != 0) {
-        Desccription = other.Desccription;
+      if (other.Description.Length != 0) {
+        Description = other.Description;
       }
       if (other.Status.Length != 0) {
         Status = other.Status;
@@ -1557,7 +1557,7 @@ namespace GrpcMantenimiento {
             break;
           }
           case 26: {
-            Desccription = input.ReadString();
+            Description = input.ReadString();
             break;
           }
           case 34: {
@@ -1588,7 +1588,7 @@ namespace GrpcMantenimiento {
             break;
           }
           case 26: {
-            Desccription = input.ReadString();
+            Description = input.ReadString();
             break;
           }
           case 34: {

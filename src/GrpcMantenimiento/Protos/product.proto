@@ -73,7 +73,7 @@ message UpdateProductRequest
 {
 	int32 id = 1;
 	string name = 2;
-	string desccription = 3;
+	string description = 3;
 	string status = 4;
 }
 
