@@ -1,0 +1,5 @@
+obj\Debug\net8.0\Protos/Product.cs \
+obj\Debug\net8.0\Protos/ProductGrpc.cs: google/api/http.proto\
+ C:/Users/mpalacios/.nuget/packages/grpc.tools/2.59.0/build/native/include/google/protobuf/descriptor.proto\
+ google/api/annotations.proto\
+ Protos/product.proto
