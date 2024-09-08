@@ -3,7 +3,7 @@ name: Check API Key and Environment Variable
 on:
   push:
     branches:
-      - main
+      - main 
 
 jobs:
   validate_key_and_env:
@@ -24,11 +24,9 @@ jobs:
 
     - name: Print APP_ENV variable
       run: |
-        if [ -z "${{ env.APP_ENV }}" ]; then
-          echo "APP_ENV variable is not set."
+        if [ -z "${{ secrets.APP_ENV }}" ]; then
+          echo "APP_ENV secret is not set."
           exit 1
         else
-          echo "APP_ENV is set to: ${{ env.APP_ENV }}"
+          echo "APP_ENV is set to: ${{ secrets.APP_ENV }}"
         fi
-      env:
-        APP_ENV: ${{ secrets.APP_ENV }}
