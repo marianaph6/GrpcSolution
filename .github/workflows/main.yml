@@ -3,12 +3,13 @@ name: Check API Key and Environment Variable
 on:
   push:
     branches:
-      - main 
+      - main
       - develop
 
 jobs:
   validate_api_key:
     runs-on: ubuntu-latest
+    environment: develop
 
     steps:
     - name: Checkout code
@@ -17,8 +18,8 @@ jobs:
     - name: Validate API_KEY secret
       run: |
         if [ -z "${{ secrets.API_KEY }}" ]; then
-          echo "API_KEY secret, no está configurado."
+          echo "API_KEY secret is not set."
           exit 1
         else
-          echo "API_KEY secret está configiurado como: ${{ secrets.API_KEY }}"
+          echo "API_KEY secret is set to: ${{ secrets.API_KEY }}"
         fi
