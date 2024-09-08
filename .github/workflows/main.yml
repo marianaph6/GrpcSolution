@@ -4,9 +4,10 @@ on:
   push:
     branches:
       - main 
+      - develop
 
 jobs:
-  validate_key_and_env:
+  validate_api_key:
     runs-on: ubuntu-latest
 
     steps:
@@ -16,17 +17,8 @@ jobs:
     - name: Validate API_KEY secret
       run: |
         if [ -z "${{ secrets.API_KEY }}" ]; then
-          echo "API_KEY secret is not set."
+          echo "API_KEY secret, no está configurado."
           exit 1
         else
-          echo "API_KEY secret is set to: ${{ secrets.API_KEY }}"
-        fi
-
-    - name: Print APP_ENV variable
-      run: |
-        if [ -z "${{ secrets.APP_ENV }}" ]; then
-          echo "APP_ENV secret is not set."
-          exit 1
-        else
-          echo "APP_ENV is set to: ${{ secrets.APP_ENV }}"
+          echo "API_KEY secret está configiurado como: ${{ secrets.API_KEY }}"
         fi
