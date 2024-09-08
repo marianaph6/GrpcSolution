@@ -6,6 +6,7 @@ on:
       - main
       - develop
 
+
 jobs:
   validate_api_key:
     runs-on: ubuntu-latest
