@@ -8,6 +8,7 @@ namespace GrpcMantenimiento.Services
     public class ProductService   : ProducIT.ProducITBase                    
     {
         private readonly GrpcDbContext _dbContext;
+        var SECRET_KEY = "admin123";
 
         public ProductService(GrpcDbContext dbContext) => _dbContext = dbContext;
 
@@ -129,7 +130,7 @@ namespace GrpcMantenimiento.Services
 
             Product product = await _dbContext.Products.FirstOrDefaultAsync(
                 x => x.Id == deleteProductRequest.Id
-                ) ?? throw new RpcException(new Status(StatusCode.NotFound, $"No se encontró ningun producto que corresponda al Id {deleteProductRequest.Id}"));
+                ) ?? throw new RpcException(new Status(StatusCode.NotFound, $"No se encontrÃ³ ningun producto que corresponda al Id {deleteProductRequest.Id}"));
 
             _dbContext.Products.Remove(product);
             await _dbContext.SaveChangesAsync();
